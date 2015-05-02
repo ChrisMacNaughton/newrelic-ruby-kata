@@ -8,6 +8,7 @@ class ErrorsController < ApplicationController
   end
   
   def some_internal_logic(x)
+    return 0 if x == 0
     return 1 / x
   end
 end
